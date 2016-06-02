@@ -1,2 +1,3 @@
 # JEE
-Java EE examples
+Java EE example
+TemperatureConvertor
