@@ -52,4 +52,24 @@ public class TemperatureConvertor implements Serializable {
 		this.unit = "Celsius";
 		this.converted = (convert - 32) / 1.8;
 	}
+	public void celsiusToKelvin() {
+		this.initial = false;
+		this.unit = "Kelvin";
+		this.converted = convert + 273.15;
+	}
+	public void fahrenheitToKelvin() {
+		this.initial = false;
+		this.unit = "Kelvin";
+		this.converted = ((convert - 32) / 1.8) + 273.15;
+	}
+	public void kelvinToCelsius() {
+		this.initial = false;
+		this.unit = "Celsius";
+		this.converted = convert - 273.15;
+	}
+	public void kelvinToFahrenheit() {
+		this.initial = false;
+		this.unit = "Fahrenheit";
+		this.converted = ((convert- 273.15) * 1.8) + 32;
+	}
 }
